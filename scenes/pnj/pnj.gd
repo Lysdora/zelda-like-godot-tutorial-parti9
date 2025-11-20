@@ -24,6 +24,11 @@ func demarrer_dialogue():
 	dialogue_box.afficher_dialogue(nom_pnj, texte_dialogue)
 	print("Dialogue avec ", nom_pnj, " demarré !")
 
+func finir_dialogue():
+	var dialogue_box = get_node("/root/Foret/UI/DialogueBox")
+	dialogue_box.fin_de_conversation()
+	print("Dialogue avec ", nom_pnj, " terminé !")
+
 func _on_zone_interaction_body_entered(body: Node2D) -> void:
 	if body.is_in_group("Player"):
 		player_a_proximite = true
