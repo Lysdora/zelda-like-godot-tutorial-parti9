@@ -10,9 +10,6 @@ func _ready() -> void:
 	hide()
 
 
-func _input(event: InputEvent) -> void:
-	if event.is_action_pressed('ui_accept'):
-		afficher_dialogue("Bilbo", "Tu as appuyé sur ESPACE !")
 
 	
 
