@@ -2,6 +2,7 @@ extends StaticBody2D
 
 @onready var zone_interaction: Area2D = $ZoneInteraction
 @onready var icone_interaction: Sprite2D = $ZoneInteraction/IconeInteraction
+@onready var dialogue_box = get_node("/root/Foret/UI/DialogueBox")
 
 # Variable pour savoir si le petit player est proche
 var player_a_proximite: bool = false
@@ -18,6 +19,7 @@ func _unhandled_input(event: InputEvent) -> void:
 
 func demarrer_dialogue():
 	print("On va demarrer le dialogue avec Bilbo")
+	dialogue_box.afficher_dialogue("Bilbo", "Bonjour, aventurier ! J'ai besoin de ton aide pour retrouver mes poulets.")
 
 func _on_zone_interaction_body_entered(body: Node2D) -> void:
 	if body.name == "Player":
