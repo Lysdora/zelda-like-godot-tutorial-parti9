@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=4 uid="uid://cpfpc0tugmc5m"]
+[gd_scene load_steps=16 format=4 uid="uid://cpfpc0tugmc5m"]
 
 [ext_resource type="PackedScene" uid="uid://bx2xgah7icejn" path="res://scenes/player.tscn" id="1_888cr"]
 [ext_resource type="Texture2D" uid="uid://dukxapf0bhx5u" path="res://assets/Tileset.png" id="1_udane"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bk13rttd3a006" path="res://scenes/bilbo.tscn" id="4_keh1o"]
 [ext_resource type="PackedScene" uid="uid://cgysjw48hu2wa" path="res://scenes/poulet.tscn" id="5_vo7w3"]
 [ext_resource type="PackedScene" uid="uid://gitpncrbrpek" path="res://ui/scenes/ui.tscn" id="7_4lnwq"]
+[ext_resource type="PackedScene" uid="uid://dqg0e8huv62c" path="res://scenes/pnj/ombre_malefique.tscn" id="7_pb8iv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_udane"]
 texture = ExtResource("1_udane")
@@ -359,6 +360,9 @@ y_sort_enabled = true
 y_sort_enabled = true
 tile_map_data = PackedByteArray("AAACAAIAAAABAAoAAAAIAAIAAAABAAoAAAAFAAMAAAABAAgAAAAeAAEAAAAEAA4AAAAdAA4AAAAEAA4AAAAXAA4AAAAEAA4AAAAaAAsAAAAEAA4AAAAeAAoAAAABAAoAAAACAA4AAAABAAoAAAAXAAEAAAADAAEAAAAdAAcAAAADAAQAAAACAAgAAAADAAQAAAAGAA4AAAADAAQAAAAaAA8AAAADAAQAAAAcAAQAAAAJAAEAAAAKAA4AAAAJAAEAAAACAAUAAAAJAAEAAAAWAAsAAAAJAAEAAAAaAAUAAAAGAAQAAAADAAsAAAAGAAQAAAAKAAIAAAAGAAQAAAAQAAMAAQABAAEAAAA=")
 tile_set = SubResource("TileSet_keh1o")
+
+[node name="OmbreMalefique" parent="YSorting" instance=ExtResource("7_pb8iv")]
+position = Vector2(573, 71)
 
 [node name="Bilbo" parent="YSorting" instance=ExtResource("4_keh1o")]
 position = Vector2(182, 89)

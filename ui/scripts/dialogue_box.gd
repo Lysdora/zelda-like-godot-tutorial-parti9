@@ -1,25 +1,22 @@
 extends MarginContainer
 
-@onready var nom_pnj_label = $PanelContainer/VBoxContainer/NomPNJ
-@onready var texte_label = $PanelContainer/VBoxContainer/TexteDialogue
+@onready var nom_pnj: Label = $PanelContainer/VBoxContainer/NomPNJ
+@onready var texte_dialogue: RichTextLabel = $PanelContainer/VBoxContainer/TexteDialogue
 
-
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	# Cacher la boite de dialogue au démarrage
 	hide()
 
-
-func _input(event: InputEvent) -> void:
-	if event.is_action_pressed('ui_accept'):
-		afficher_dialogue("Bilbo", "Tu as appuyé sur ESPACE !")
-
+func _unhandled_input(event: InputEvent) -> void:
+	if event.is_action_pressed("Interagir"):
+		afficher_dialogue("Bilbo", "Je suis fatigué")
 	
+	if event.is_action_pressed("Fermer"):
+		fin_de_conversation()
 
-func afficher_dialogue(nom: String, texte: String):
-	nom_pnj_label.text = nom
-	texte_label.text = texte
+func afficher_dialogue(nom: String, dialogue: String):
+	nom_pnj.text = nom
+	texte_dialogue.text = dialogue
 	show()
 
-func fermer_dialogue():
+func fin_de_conversation():
 	hide()

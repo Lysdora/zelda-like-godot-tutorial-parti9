@@ -1,8 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://bk13rttd3a006"]
+[gd_scene load_steps=6 format=3 uid="uid://dqg0e8huv62c"]
 
-[ext_resource type="Texture2D" uid="uid://riemw4fif7d" path="res://assets/Bilbo_idle.png" id="1_0h1ob"]
-[ext_resource type="Script" uid="uid://blms7tkr6jbvi" path="res://scenes/pnj/pnj.gd" id="1_lunjn"]
-[ext_resource type="Texture2D" uid="uid://qypyle4yi642" path="res://assets/IconeDeQuete.png" id="2_ijqoy"]
+[ext_resource type="Script" uid="uid://blms7tkr6jbvi" path="res://scenes/pnj/pnj.gd" id="1_h5ica"]
+[ext_resource type="Texture2D" uid="uid://df3xeuaxusaye" path="res://scenes/pnj/assets/ombre1.png" id="2_h5ica"]
+[ext_resource type="Texture2D" uid="uid://qypyle4yi642" path="res://assets/IconeDeQuete.png" id="3_hm87i"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ijqoy"]
 radius = 9.0
@@ -10,15 +10,14 @@ radius = 9.0
 [sub_resource type="CircleShape2D" id="CircleShape2D_lunjn"]
 radius = 34.0147
 
-[node name="Bilbo" type="StaticBody2D"]
-script = ExtResource("1_lunjn")
-nom_pnj = "Bilbo"
-texte_dialogue = "Salut mon ami !"
+[node name="OmbreMalefique" type="StaticBody2D"]
+script = ExtResource("1_h5ica")
+nom_pnj = "Ombre Malefique"
+texte_dialogue = "Je n'ai pas le droit de vous parler"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_0h1ob")
-offset = Vector2(0, -12)
-hframes = 6
+texture = ExtResource("2_h5ica")
+offset = Vector2(0, -5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -5)
@@ -27,7 +26,8 @@ shape = SubResource("CircleShape2D_ijqoy")
 [node name="ZoneInteraction" type="Area2D" parent="."]
 
 [node name="IconeInteraction" type="Sprite2D" parent="ZoneInteraction"]
-texture = ExtResource("2_ijqoy")
+position = Vector2(0, -8)
+texture = ExtResource("3_hm87i")
 offset = Vector2(0, -28)
 hframes = 4
 
