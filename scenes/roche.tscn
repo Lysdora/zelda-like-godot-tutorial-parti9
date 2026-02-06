@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://calkrwo7r01s7"]
+
+[ext_resource type="Texture2D" uid="uid://di3cg5s3mg7oh" path="res://assets/stone.png" id="1_bwmij"]
+[ext_resource type="Script" uid="uid://chkgdfafelnn2" path="res://scripts/roche.gd" id="1_w47o4"]
+[ext_resource type="Resource" uid="uid://3ughsx6u7hgp" path="res://data/roche/mine_pierre.tres" id="2_7ax8n"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w47o4"]
+atlas = ExtResource("1_bwmij")
+region = Rect2(1, 49, 14, 13)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7ax8n"]
+radius = 7.0
+
+[node name="Roche" type="StaticBody2D" unique_id=1679206802]
+script = ExtResource("1_w47o4")
+data = ExtResource("2_7ax8n")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2020625358]
+texture = SubResource("AtlasTexture_w47o4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1987724688]
+shape = SubResource("CircleShape2D_7ax8n")
