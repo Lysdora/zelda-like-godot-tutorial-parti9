@@ -9,9 +9,12 @@ var poulet_ramasees: int = 0
 var poulet_requis: int = 5
 
 
+<<<<<<< HEAD
 	
 
 
+=======
+>>>>>>> 4d53b554e57657845d60ab0f6541cbee14741f09
 # ====================================
 # 🎬 FONCTION 1 : DEMARRER LA QUETE
 #=====================================

@@ -27,6 +27,10 @@ var quetes = []
 func _ready() -> void:
 	#journal_de_quete.visible = false
 	#visible = false
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4d53b554e57657845d60ab0f6541cbee14741f09
 	print("Le journal de quete est pret")
 	quetes = [
 		{
