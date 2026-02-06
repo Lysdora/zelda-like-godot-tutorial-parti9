@@ -12,19 +12,6 @@ radius = 33.01515
 
 [node name="Bilbo" type="StaticBody2D"]
 script = ExtResource("1_lunjn")
-[ext_resource type="Script" uid="uid://blms7tkr6jbvi" path="res://scenes/pnj/pnj.gd" id="1_lunjn"]
-[ext_resource type="Texture2D" uid="uid://qypyle4yi642" path="res://assets/IconeDeQuete.png" id="2_ijqoy"]
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_ijqoy"]
-radius = 9.0
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_lunjn"]
-radius = 34.0147
-
-[node name="Bilbo" type="StaticBody2D"]
-script = ExtResource("1_lunjn")
-nom_pnj = "Bilbo"
-texte_dialogue = "Salut mon ami !"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_0h1ob")
@@ -33,7 +20,6 @@ hframes = 6
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -3)
-position = Vector2(0, -5)
 shape = SubResource("CircleShape2D_ijqoy")
 
 [node name="ZoneInteraction" type="Area2D" parent="."]

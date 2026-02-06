@@ -1,5 +1,4 @@
 [gd_resource type="Theme" format=3 uid="uid://63b7g2t6pyee"]
-[gd_resource type="Theme" load_steps=3 format=3 uid="uid://63b7g2t6pyee"]
 
 [ext_resource type="Texture2D" uid="uid://drl27rtw3p4ts" path="res://ui/assets/inventaire_tuto_bg.png" id="1_68cqb"]
 

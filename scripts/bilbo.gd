@@ -10,10 +10,6 @@ var player_a_proximite: bool = false
 func _ready() -> void:
 	icone_interaction.visible = false
 
-func _unhandled_input(event: InputEvent) -> void:
-	if event.is_action_pressed("Interagir"):
-		var dialogue_box = get_node("/root/Foret/UI/DialogueBox")
-		dialogue_box.afficher_dialogue("Bilbo", "Bonjour aventurier !")
 
 func _on_zone_interaction_body_entered(body: Node2D) -> void:
 	if body.name == "Player":
