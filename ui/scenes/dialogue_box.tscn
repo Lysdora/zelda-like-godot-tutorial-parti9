@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://de3n0pfbvnk55"]
+[gd_scene format=3 uid="uid://de3n0pfbvnk55"]
 
 [ext_resource type="Script" uid="uid://ef5mqmj8xm1l" path="res://ui/scripts/dialogue_box.gd" id="1_3pavl"]
 [ext_resource type="Texture2D" uid="uid://sp5270s60wfd" path="res://ui/assets/inventaire_tuto.png" id="2_fvaub"]

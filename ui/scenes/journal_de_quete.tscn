@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://bpnpfd7jhuxgg"]
+[gd_scene format=3 uid="uid://bpnpfd7jhuxgg"]
 
 [ext_resource type="Texture2D" uid="uid://sp5270s60wfd" path="res://ui/assets/inventaire_tuto.png" id="1_w5pop"]
 [ext_resource type="Script" uid="uid://brehjuy5fb022" path="res://ui/scripts/journal_de_quete.gd" id="2_eb1gw"]

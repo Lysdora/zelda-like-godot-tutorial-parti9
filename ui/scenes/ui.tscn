@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 [gd_scene load_steps=16 format=3 uid="uid://gitpncrbrpek"]
 
 [ext_resource type="Texture2D" uid="uid://sp5270s60wfd" path="res://ui/assets/inventaire_tuto.png" id="1_f048j"]
@@ -189,7 +188,6 @@ stretch_mode = 4
 [connection signal="pressed" from="JournalDeQuete/BoutonQuitterJournal" to="JournalDeQuete" method="_on_bouton_quitter_journal_pressed"]
 [connection signal="item_selected" from="JournalDeQuete/PanelListeQuete/VBoxContainer/ItemList" to="JournalDeQuete" method="_on_item_list_item_selected"]
 [connection signal="pressed" from="JournalDeQuete/BoutonQuitterQuete" to="JournalDeQuete" method="_on_bouton_quitter_quete_pressed"]
-=======
 [gd_scene load_steps=3 format=3 uid="uid://gitpncrbrpek"]
 
 [ext_resource type="PackedScene" uid="uid://bpnpfd7jhuxgg" path="res://ui/scenes/journal_de_quete.tscn" id="1_f048j"]
@@ -202,4 +200,3 @@ visible = false
 
 [node name="DialogueBox" parent="." instance=ExtResource("11_1lqaq")]
 visible = false
->>>>>>> 4d53b554e57657845d60ab0f6541cbee14741f09

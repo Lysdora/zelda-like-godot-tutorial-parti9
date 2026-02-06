@@ -36,13 +36,10 @@ Ce repository contient **plusieurs parties** du tutoriel, organisées en **branc
 - **`main`** → Code de la **partie la plus récente** (actuellement partie 8)
 - **`partie-08`** → Journal de quêtes *(branche figée)*
 - **`partie-07`** → PNJ avec intelligence artificielle *(branche figée)*
-<<<<<<< HEAD
 - **`partie-06`** → *Animation TWEEN* *(branche figée)*
 - **`partie-05`** → *Un PNJ dans ton jeu* *(branche figée)*
-=======
 - **`partie-06`** → *(branche figée)*
 - **`partie-05`** → *(branche figée)*
->>>>>>> 4d53b554e57657845d60ab0f6541cbee14741f09
 
 Chaque branche représente l'état final du code à la fin de l'épisode correspondant.
 
@@ -68,11 +65,8 @@ git clone -b partie-08 https://github.com/Lysdora/zelda-like-godot-tutorial.git
 git clone -b partie-07 https://github.com/Lysdora/zelda-like-godot-tutorial.git
 ```
 
-<<<<<<< HEAD
 ---
 
-=======
->>>>>>> 4d53b554e57657845d60ab0f6541cbee14741f09
 ## 📚 Liste des parties
 
 | Partie | Titre | Lien vidéo | Branche |
@@ -83,8 +77,6 @@ git clone -b partie-07 https://github.com/Lysdora/zelda-like-godot-tutorial.git
 | 8️⃣ | **Journal de quêtes** | [▶️ Voir la vidéo](#) | [`partie-08`](../../tree/partie-08) |
 
 > 💡 **Note :** Le lien de la partie 8 sera ajouté une fois la vidéo publiée sur YouTube !
-<<<<<<< HEAD
-=======
 
 ## 🎮 Partie 8 : Journal de quêtes (VERSION ACTUELLE)
 
@@ -270,4 +262,3 @@ Merci de suivre cette série ! Si ce projet t'aide :
 ## 🎓 Apprends en t'amusant !
 
 N'oublie pas : la programmation de jeux vidéo, c'est avant tout **du plaisir** ! Prends ton temps, expérimente, et surtout, **amuse-toi** ! 🚀✨
->>>>>>> 4d53b554e57657845d60ab0f6541cbee14741f09

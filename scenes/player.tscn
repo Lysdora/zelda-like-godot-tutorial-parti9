@@ -1,16 +1,13 @@
-<<<<<<< HEAD
 [gd_scene format=3 uid="uid://bx2xgah7icejn"]
 
 [ext_resource type="Script" uid="uid://dnxw7jl3j8rwb" path="res://scripts/player.gd" id="1_onrkg"]
 [ext_resource type="Texture2D" uid="uid://b2cg3d8y3lfoa" path="res://assets/player/Char Idle.png" id="2_qhqgy"]
 [ext_resource type="Texture2D" uid="uid://8lt058gr3gjg" path="res://assets/player/Char Walk.png" id="3_dqkch"]
-=======
 [gd_scene load_steps=70 format=3 uid="uid://bx2xgah7icejn"]
 
 [ext_resource type="Script" uid="uid://dnxw7jl3j8rwb" path="res://scripts/player.gd" id="1_onrkg"]
 [ext_resource type="Texture2D" uid="uid://b2cg3d8y3lfoa" path="res://assets/Char Idle.png" id="2_qhqgy"]
 [ext_resource type="Texture2D" uid="uid://8lt058gr3gjg" path="res://assets/Char Walk.png" id="3_dqkch"]
->>>>>>> 4d53b554e57657845d60ab0f6541cbee14741f09
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qlg0r"]
 atlas = ExtResource("2_qhqgy")
@@ -506,38 +503,29 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_8f1cb"]
 radius = 5.0
 
-<<<<<<< HEAD
 [node name="Player" type="CharacterBody2D" unique_id=678969572 groups=["Player"]]
 motion_mode = 1
 script = ExtResource("1_onrkg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1092241305]
-=======
 [node name="Player" type="CharacterBody2D" groups=["Player"]]
 motion_mode = 1
 script = ExtResource("1_onrkg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
->>>>>>> 4d53b554e57657845d60ab0f6541cbee14741f09
 position = Vector2(0, -7)
 sprite_frames = SubResource("SpriteFrames_770dr")
 animation = &"idle_down"
 autoplay = "idle_down"
 
-<<<<<<< HEAD
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=827986756]
-=======
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
->>>>>>> 4d53b554e57657845d60ab0f6541cbee14741f09
 position = Vector2(0, -4)
 shape = SubResource("CircleShape2D_8f1cb")
 debug_color = Color(0.81927574, 0.22407675, 0.82768196, 0.41960785)
 
-<<<<<<< HEAD
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2113211644]
-=======
 [node name="Camera2D" type="Camera2D" parent="."]
->>>>>>> 4d53b554e57657845d60ab0f6541cbee14741f09
 limit_left = 0
 limit_top = 0
 limit_right = 640
